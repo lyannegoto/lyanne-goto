@@ -1,0 +1,169 @@
+@font-face {
+  font-family: Aerotis;
+  src: url("../fonts/Aerotis/Aerotis.ttf");
+}
+
+html,
+body,
+section {
+  font-family: "Montserrat";
+  margin: 0px;
+  padding: 0px;
+  background-color: black;
+}
+
+.row,
+.col {
+  height: 100%;
+}
+
+/*================================================
+					HEADER
+=================================================*/
+header {
+  background-color: black;
+  color: white;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+header h1 {
+  margin: 0px;
+  padding: 0px;
+  justify-self: flex-start;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+nav {
+  justify-self: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav ul {
+  list-style: none;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+nav li {
+  display: inline-block;
+  padding: 10px;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+  height: 100%;
+}
+
+nav li a:hover {
+  background-color: white;
+  color: black;
+}
+
+header a {
+  justify-self: flex-end;
+}
+
+header button {
+  background-color: rgb(255, 255, 255, 1);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+header button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/*================================================
+				SECTION - CAROUSELS
+=================================================*/
+.section-carousels {
+  background-color: white;
+  height: 400px;
+  margin: 0px 20px;
+}
+
+.carousel-inner,
+.carousel-item {
+  height: 100%;
+}
+
+.col-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel {
+  height: 80%;
+  width: 100%;
+}
+
+.carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/*=================================================
+				SECTION - PHRASE
+=================================================*/
+.section-phrase .row {
+  background-color: white;
+  height: 200px;
+}
+
+.phrase {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.phrase h2 {
+  font-size: large;
+  font-weight: 400;
+  text-align: center;
+}
+
+.phrase h2 span {
+  font-weight: 700;
+}
+
+/*=================================================
+				SECTION - FLOWER
+=================================================*/
+.section-flower {
+  background-color: white;
+  height: 300px;
+}
+
+.flower {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.flower img {
+  margin: auto;
+  height: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+/*=================================================
+					FOOTER
+=================================================*/
+footer {
+  text-align: center;
+}
