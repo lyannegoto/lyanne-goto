@@ -3,11 +3,14 @@
   src: url("../fonts/Aerotis/Aerotis.ttf");
 }
 
-html,
-body,
+body {
+  overflow-x: hidden;
+}
+
 section {
   font-family: "Montserrat";
   margin: 0px;
+  border: 0px;
   padding: 0px;
   background-color: black;
 }
