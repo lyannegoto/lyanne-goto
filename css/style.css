@@ -5,6 +5,7 @@
 
 :root{
   --custom-grey: #989898;
+  --tamarindo: #c4745b;
 }
 
 body {
@@ -32,7 +33,7 @@ header {
   display: flex;
   padding: 0px 20px;
   align-items: center;
-  justify-content: right;
+  justify-content: center;
 }
 
 header nav {
@@ -61,7 +62,8 @@ nav li a {
 }
 
 nav li a:hover {
-  color: black;
+  font-weight: 700;
+  color: var(--tamarindo);
 }
 
 
@@ -86,7 +88,7 @@ nav li a:hover {
 }
 
 .carousel {
-  height: 80%;
+  height: 100%;
   width: 100%;
 }
 
