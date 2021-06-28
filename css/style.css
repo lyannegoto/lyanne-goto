@@ -3,7 +3,7 @@
   src: url("../fonts/Aerotis/Aerotis.ttf");
 }
 
-:root{
+:root {
   --custom-grey: #989898;
   --tamarindo: #c4745b;
 }
@@ -39,7 +39,7 @@ header {
 header nav {
   color: var(--custom-grey);
   text-decoration: none;
-  text-decoration-color:  var(--custom-grey);;
+  text-decoration-color: var(--custom-grey);
   font-family: "Montserrat";
 }
 
@@ -66,36 +66,69 @@ nav li a:hover {
   color: var(--tamarindo);
 }
 
-
 /*================================================
 				SECTION - CAROUSELS
 =================================================*/
-.section-carousels {
-  background-color: white;
-  height: 400px;
-  margin: 0px 20px;
-}
-
-.carousel-inner,
-.carousel-item {
-  height: 100%;
-}
-
-.col-carousel {
+.container-carousel {
+  height: 500px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  ;
+  /*  box-shadow is from materialize css's website */
+  box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14),
+    0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
+  z-index: 0;
 }
 
 .carousel {
-  height: 100%;
-  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  /*  box-shadow is from materialize css's website */
+  box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14),
+    0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
+  z-index: 0;
 }
 
-.carousel-item img {
-  height: 100%;
+.container-carousel img {
   width: 100%;
-  object-fit: cover;
+  z-index: -2;
+}
+
+button {
+  height: 10%;
+  border: none;
+  outline: none;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  padding: 1em;
+  display: flex;
+}
+
+button .arrow {
+  border: solid #fff;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 10px;
+  transition: transform 0.3s ease-out;
+  outline: none;
+}
+
+#right-btn {
+  margin: auto 0 auto -2em;
+}
+
+#right-btn .arrow {
+  transform: rotate(-45deg);
+}
+
+#left-btn {
+  z-index: 0;
+  margin: auto -2em auto 0;
+}
+
+#left-btn .arrow {
+  transform: rotate(135deg);
 }
 
 /*=================================================
