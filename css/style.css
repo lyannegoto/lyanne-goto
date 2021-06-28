@@ -3,6 +3,10 @@
   src: url("../fonts/Aerotis/Aerotis.ttf");
 }
 
+:root{
+  --custom-grey: #989898;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -24,34 +28,22 @@ section {
 					HEADER
 =================================================*/
 header {
-  background-color: black;
-  color: white;
   height: 100px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 0px 20px;
+  align-items: center;
+  justify-content: right;
 }
 
-header h1 {
-  margin: 0px;
-  padding: 0px;
-  justify-self: flex-start;
-}
-
-.logo {
-  cursor: pointer;
-}
-
-nav {
-  justify-self: center;
-  margin-left: auto;
-  margin-right: auto;
+header nav {
+  color: var(--custom-grey);
+  text-decoration: none;
+  text-decoration-color:  var(--custom-grey);;
+  font-family: "Montserrat";
 }
 
 nav ul {
   list-style: none;
-  height: 100%;
   margin: 0px;
   padding: 0px;
 }
@@ -62,31 +54,16 @@ nav li {
 }
 
 nav li a {
-  color: white;
   text-decoration: none;
+  color: var(--custom-grey);
   transition: all 0.3s ease 0s;
-  height: 100%;
-}
-
-nav li a:hover {
-  background-color: white;
-  color: black;
-}
-
-header a {
   justify-self: flex-end;
 }
 
-header button {
-  background-color: rgb(255, 255, 255, 1);
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
+nav li a:hover {
+  color: black;
 }
 
-header button:hover {
-  background-color: rgba(255, 255, 255, 0.8);
-}
 
 /*================================================
 				SECTION - CAROUSELS
