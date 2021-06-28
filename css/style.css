@@ -69,30 +69,30 @@ nav li a:hover {
 /*================================================
 				SECTION - CAROUSELS
 =================================================*/
+.section-phrase .row {
+  height: 500px;
+}
+
 .container-carousel {
-  height: 500px;
-  display: flex;
-  justify-content: space-evenly;
-  ;
-  /*  box-shadow is from materialize css's website */
-  box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14),
-    0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
-  z-index: 0;
-}
-
-.carousel {
-  height: 500px;
-  display: flex;
-  justify-content: center;
-  /*  box-shadow is from materialize css's website */
-  box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14),
-    0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
-  z-index: 0;
-}
-
-.container-carousel img {
   width: 100%;
-  z-index: -2;
+  display: flex;
+  /*  box-shadow is from materialize css's website */
+  box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14),
+    0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
+  z-index: 0;
+}
+
+.carousel-wrapper {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;  
+  z-index: 0;
+}
+
+.carousel-wrapper img {
+  width: 90%;
+  z-index: 2;
 }
 
 button {
