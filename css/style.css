@@ -68,28 +68,24 @@ nav li a:hover {
 /*================================================
 				SECTION - CAROUSELS
 =================================================*/
-.section-phrase .row {
-  height: 500px;
-}
-
 .container-carousel {
-  width: 100%;
-  display: flex;
-  z-index: 0;
-}
-
-.carousel-wrapper {
   height: 500px;
-  width: 100%;
-  display: flex;
-  justify-content: center;  
-  z-index: 0;
+  justify-content: center;
+  display: flex;  
+  gap: 5px;
 }
 
-.carousel-wrapper img {
-  width: 90%;
-  z-index: 2;
-  object-fit: contain;
+#carousel {  
+  transition: opacity 0.5s;
+}
+
+.container-carousel:hover {
+  opacity: 0;
+}
+
+.section-carousel .row {
+  height: 500px;
+  display: flex;
 }
 
 button {
@@ -109,23 +105,6 @@ button .arrow {
   padding: 10px;
   transition: transform 0.3s ease-out;
   outline: none;
-}
-
-#right-btn {
-  margin: auto 0 auto -2em;
-}
-
-#right-btn .arrow {
-  transform: rotate(-45deg);
-}
-
-#left-btn {
-  z-index: 0;
-  margin: auto -2em auto 0;
-}
-
-#left-btn .arrow {
-  transform: rotate(135deg);
 }
 
 /*=================================================

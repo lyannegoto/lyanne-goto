@@ -1,3 +1,4 @@
+const sectionCarousel = document.getElementById('carousel');
 const carousels = document.getElementsByClassName('carousel-img');
 const rightBtn = document.getElementById('right-btn');
 const leftBtn = document.getElementById('left-btn');
@@ -20,21 +21,21 @@ carousels[2].src = pictures[0][2]
 
 let position = 0;
 
-const moveRight = () => {
+function moveRight() {
     if (position >= pictures.length - 1) {
         position = 0
         for (let i = 0; i < 3; i++) {
             carousels[i].src = pictures[position][i]
         }
-        return;
+        return
     }
-    position++;
+    position++
     for (let i = 0; i < 3; i++) {
         carousels[i].src = pictures[position][i]
-    }    
+    }
 }
 
-const moveLeft = () => {
+function moveLeft() {
     if (position < 1) {
         position = pictures.length - 1
         for (let i = 0; i < 3; i++) {
@@ -48,5 +49,20 @@ const moveLeft = () => {
     }
 }
 
-rightBtn.addEventListener("click", moveRight);
-leftBtn.addEventListener("click", moveLeft);
+function fadeIn() {
+    sectionCarousel.style.opacity = "1"
+}
+
+function fadeOut() {
+    sectionCarousel.style.opacity = "0"
+}
+
+function carouselWalk() {
+    setTimeout(fadeOut, 4000);
+    setTimeout(fadeIn, 5000);
+    moveRight()
+}
+
+setTimeout(fadeOut, 4000);
+setTimeout(fadeIn, 5000);
+setInterval(carouselWalk, 5000)
