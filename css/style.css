@@ -75,8 +75,6 @@ nav li a:hover {
 .container-carousel {
   width: 100%;
   display: flex;
-  /*  box-shadow is from materialize css's website */
-  
   z-index: 0;
 }
 
