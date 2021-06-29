@@ -14,7 +14,7 @@ body {
 
 section {
   font-family: "Montserrat";
-  margin: 0px;
+  margin-bottom: 50px;
   border: 0px;
   padding: 0px;
 }
@@ -38,7 +38,6 @@ header {
 header nav {
   color: var(--custom-grey);
   text-decoration: none;
-  text-decoration-color: var(--custom-grey);
   font-family: "Montserrat";
 }
 
@@ -68,6 +67,10 @@ nav li a:hover {
 /*================================================
 				SECTION - CAROUSELS
 =================================================*/
+.section-carousel .row {
+  display: flex;
+}
+
 .container-carousel {
   height: 500px;
   justify-content: center;
@@ -79,17 +82,11 @@ nav li a:hover {
   transition: opacity 0.5s;
 }
 
-.section-carousel .row {
-  height: 500px;
-  display: flex;
-}
-
 /*=================================================
 				SECTION - PHRASE
 =================================================*/
 .section-phrase .row {
   background-color: white;
-  height: 200px;
 }
 
 .phrase {
@@ -113,7 +110,7 @@ nav li a:hover {
 =================================================*/
 .section-flower {
   background-color: white;
-  height: 300px;
+  height: 200px;
 }
 
 .flower {
@@ -124,7 +121,7 @@ nav li a:hover {
 
 .flower img {
   margin: auto;
-  height: 50%;
+  height: 100%;
   object-fit: cover;
   display: block;
 }
@@ -134,4 +131,25 @@ nav li a:hover {
 =================================================*/
 footer {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+footer .link-insta {
+  margin-bottom: 5px;
+}
+
+footer div a {
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-weight: 700;
+  color: var(--custom-grey);
+}
+
+footer div a:hover {
+  color: var(--tamarindo);
+}
+
+footer iframe {
+  max-width: 20%;
 }
