@@ -71,16 +71,12 @@ nav li a:hover {
 .container-carousel {
   height: 500px;
   justify-content: center;
-  display: flex;  
+  display: flex;
   gap: 5px;
 }
 
-#carousel {  
+#carousel {
   transition: opacity 0.5s;
-}
-
-.container-carousel:hover {
-  opacity: 0;
 }
 
 .section-carousel .row {
