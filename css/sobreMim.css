@@ -4,10 +4,11 @@
 }
 
 /*=================================================
-				        SECTION - selfie
+				        SECTION - SELFIE
 =================================================*/
 .section-selfie {
   height: 300px;
+  padding: 25px;
 }
 
 .section-selfie div {
@@ -22,12 +23,16 @@
 }
 
 /*=================================================
-				        SECTION - heart
+				        SECTION - HEART
 =================================================*/
+.section-heart {
+  padding: 25px;
+}
+
 .section-heart div {
   display: flex;
   justify-content: center;
-  width: 100%;  
+  width: 100%;
 }
 
 .section-heart div img {
@@ -43,7 +48,10 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  color: #bbbebf;
+}
+
+.phrase h2 {
+  font-size: small;
 }
 
 .phrase h2 span {
