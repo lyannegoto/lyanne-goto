@@ -93,11 +93,6 @@ nav li a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.phrase h2 {
-  font-size: large;
-  font-weight: 400;
   text-align: center;
 }
 
