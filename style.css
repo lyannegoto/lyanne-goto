@@ -1,11 +1,11 @@
-@font-face {
-  font-family: Aerotis;
-  src: url("../fonts/Aerotis/Aerotis.ttf");
-}
-
 :root {
   --custom-grey: #989898;
   --tamarindo: #c4745b;
+}
+
+@font-face {
+  font-family: Aerotis;
+  src: url("../fonts/Aerotis/Aerotis.ttf");
 }
 
 body {
@@ -85,10 +85,6 @@ nav li a:hover {
 /*=================================================
 				SECTION - PHRASE
 =================================================*/
-.section-phrase .row {
-  background-color: white;
-}
-
 .phrase {
   display: flex;
   flex-direction: column;
@@ -98,6 +94,10 @@ nav li a:hover {
 
 .phrase h2 span {
   font-weight: 700;
+}
+
+.paragraph {
+  height: 30px;
 }
 
 /*=================================================

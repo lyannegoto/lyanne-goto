@@ -1,0 +1,55 @@
+:root {
+  --custom-grey: #989898;
+  --tamarindo: #c4745b;
+}
+
+/*=================================================
+				        SECTION - selfie
+=================================================*/
+.section-selfie {
+  height: 300px;
+}
+
+.section-selfie div {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.section-selfie div img {
+  height: 100%;
+  object-fit: cover;
+}
+
+/*=================================================
+				        SECTION - heart
+=================================================*/
+.section-heart div {
+  display: flex;
+  justify-content: center;
+  width: 100%;  
+}
+
+.section-heart div img {
+  width: 5%;
+  height: auto;
+}
+
+/*=================================================
+			          	SECTION - PHRASE
+=================================================*/
+.phrase {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: #bbbebf;
+}
+
+.phrase h2 span {
+  font-weight: 700;
+}
+
+.paragraph {
+  height: 30px;
+}
