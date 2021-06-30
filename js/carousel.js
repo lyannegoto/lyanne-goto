@@ -57,15 +57,18 @@ function fadeOut() {
     sectionCarousel.style.opacity = "0"
 }
 
-const carouselTransition = 6000
-const carouselFadeTransition = carouselTransition - (500 * 2)
+const transitionDuration = 400
+const timeBetweenPictures = 7000
+
+const carouselFadeOut = timeBetweenPictures - (transitionDuration*2)
+const carouselFadeIn = carouselFadeOut + transitionDuration
 
 function carouselWalk() {
-    setTimeout(fadeOut, carouselFadeTransition);
-    setTimeout(fadeIn, carouselTransition);
+    setTimeout(fadeOut, carouselFadeOut);
+    setTimeout(fadeIn, carouselFadeIn);
     moveRight()
 }
 
-setTimeout(fadeOut, carouselFadeTransition);
-setTimeout(fadeIn, carouselTransition);
-setInterval(carouselWalk, carouselTransition)
+setTimeout(fadeOut, carouselFadeOut);
+setTimeout(fadeIn, carouselFadeIn);
+setInterval(carouselWalk, timeBetweenPictures)
