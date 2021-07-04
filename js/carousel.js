@@ -50,25 +50,23 @@ function moveLeft() {
 }
 
 function fadeIn() {
+    console.log('fade in ' + new Date().getTime() / 1000)
+    moveRight()
     sectionCarousel.style.opacity = "1"
 }
 
 function fadeOut() {
+    console.log('fade out' + new Date().getTime() / 1000)
     sectionCarousel.style.opacity = "0"
 }
 
-const transitionDuration = 400
-const timeBetweenPictures = 7000
-
-const carouselFadeOut = timeBetweenPictures - (transitionDuration*2)
-const carouselFadeIn = carouselFadeOut + transitionDuration
+const transitionTime = 2000
+const pictureDisplayTime = 5000
 
 function carouselWalk() {
-    setTimeout(fadeOut, carouselFadeOut);
-    setTimeout(fadeIn, carouselFadeIn);
-    moveRight()
+    console.log(new Date().getTime() / 1000)
+    setTimeout(fadeOut, pictureDisplayTime);
+    setTimeout(fadeIn, pictureDisplayTime + transitionTime)
 }
 
-setTimeout(fadeOut, carouselFadeOut);
-setTimeout(fadeIn, carouselFadeIn);
-setInterval(carouselWalk, timeBetweenPictures)
+setInterval(carouselWalk, pictureDisplayTime + (transitionTime * 2))
