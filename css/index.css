@@ -29,6 +29,10 @@
   color: var(--custom-grey);
 }
 
+.text h3 {
+  font-size: 22px
+}
+
 .text span {
   color: var(--custom-grey-bold);
 }
