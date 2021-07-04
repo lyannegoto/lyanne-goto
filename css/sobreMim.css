@@ -1,7 +1,4 @@
-:root {
-  --custom-grey: #989898;
-  --tamarindo: #c4745b;
-}
+@import "colors.css";
 
 /*=================================================
 				        SECTION - SELFIE
