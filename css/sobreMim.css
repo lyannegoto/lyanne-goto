@@ -47,12 +47,12 @@
   text-align: center;
 }
 
-.phrase h2 {
-  font-size: small;
+.phrase p {
+  color: var(--custom-grey);
 }
 
-.phrase h2 span {
-  font-weight: 700;
+.phrase p span {
+  color: var(--custom-grey-bold);
 }
 
 .paragraph {
