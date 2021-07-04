@@ -40,18 +40,19 @@
 /*=================================================
 			          	SECTION - PHRASE
 =================================================*/
-.phrase {
+.text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-}
-
-.phrase p {
   color: var(--custom-grey);
 }
 
-.phrase p span {
+.text p {
+  margin: 0;
+}
+
+.text p span {
   color: var(--custom-grey-bold);
 }
 

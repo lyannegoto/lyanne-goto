@@ -21,15 +21,16 @@
 /*=================================================
 				SECTION - PHRASE
 =================================================*/
-.phrase {
+.text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  color: var(--custom-grey);
 }
 
-.phrase h2 span {
-  font-weight: 700;
+.text span {
+  color: var(--custom-grey-bold);
 }
 
 /*=================================================
