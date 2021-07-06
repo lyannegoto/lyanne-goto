@@ -88,3 +88,26 @@ footer div a:hover {
 footer iframe {
   max-width: 20%;
 }
+
+/*=================================================
+					TESTIMONIALS
+=================================================*/
+.testimonials-container {
+  display: flex;
+}
+
+.testimonials-container ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.testimonial-card{
+}
+
+.testimonials-container p {
+  margin: 0;
+}
+
+.testimonials-container h3 {
+  margin: 0;
+}
