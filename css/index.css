@@ -19,7 +19,7 @@
 }
 
 /*=================================================
-				SECTION - PHRASE
+				SECTION - TEXT
 =================================================*/
 .text {
   display: flex;
@@ -30,7 +30,7 @@
 }
 
 .text h3 {
-  font-size: 22px
+  font-size: 22px;
 }
 
 .text span {
@@ -55,4 +55,15 @@
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+/*=================================================
+				SECTION - TESTIMONIALS
+=================================================*/
+.section-testimonials {
+  height: 200px;
+}
+
+.testimonials {
+  display: flex;
 }
