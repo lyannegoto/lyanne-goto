@@ -1,4 +1,10 @@
+:root {
+  --custom-grey: #96989a;
+  --custom-grey-bold: #606062;
+  --tamarindo: #c4745b;
+}
+
 body {
-    margin: 0;
-    background-color: black;
+  margin: 0;
+  background-color: black;
 }
