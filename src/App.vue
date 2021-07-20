@@ -1,24 +1,23 @@
 <template>
   <Header />
-  <Duvidas />
   <Footer />
 </template>
 
 <script>
-import Header from './components/Header.vue'
-import Duvidas from './components/Duvidas.vue'
+import Header from "./components/Header.vue";
+//import Duvidas from './components/Duvidas.vue'
 //import SobreMim from './components/SobreMim.vue'
-import Footer from './components/Footer.vue'
+import Footer from "./components/Footer.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     Header,
-    Duvidas,
+    //Duvidas,
     //SobreMim,
     Footer,
-  }
-}
+  },
+};
 </script>
 
 <style>
@@ -27,7 +26,5 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>

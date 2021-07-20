@@ -1,32 +1,34 @@
 <template>
   <header>
     <div class="heartContainer">
-      <img alt="Heart" src="./../assets/heart.png">
+      <img alt="Heart" src="./../assets/heart.png" />
     </div>
     <div class="nameContainer">
-      <img alt="Lyanne Goto" src="./../assets/lyanne-goto.png">
+      <img alt="Lyanne Goto" src="./../assets/lyanne-goto.png" />
     </div>
     <ul>
-      <li><a href="https://instagram.com" target="_blank" rel="noopener">Início</a></li>
+      <router-link to="/Inicio">Início</router-link>
       |
-      <li><a href="https://instagram.com" target="_blank" rel="noopener">Sobre mim</a></li>
+      <router-link to="/SobreMim">Sobre Mim</router-link>
       |
-      <li><a href="https://instagram.com" target="_blank" rel="noopener">Dúvidas</a></li>
+      <router-link to="/Duvidas">Dúvidas</router-link>
       |
-      <li><a href="https://instagram.com" target="_blank" rel="noopener">Ensaios</a></li>
+      <router-link to="/Ensaios">Ensaios</router-link>
     </ul>
   </header>
+
+  <router-view></router-view>
 </template>
 
 <script>
 export default {
-  name: 'Header',
-}
+  name: "Header",
+};
 </script>
 
 <style scoped>
 .heartContainer {
-  margin: 0 auto;
+  margin: 50px auto 0;
   width: 5%;
 }
 

@@ -4,7 +4,10 @@
   --tamarindo: #c4745b;
 }
 
+html {
+  color: var(--custom-grey);
+}
+
 body {
   margin: 0;
-  background-color: black;
 }
