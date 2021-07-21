@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="pictureContainer">
-      <img alt="Lyanne" src="./../assets/lyanne.png">
+      <img alt="Lyanne" src="./../assets/lyanne.png" />
     </div>
     <p>
       Um pouco de design, cores e muita fotografia. Oie, meu nome é Lyanne, sou
@@ -57,5 +57,4 @@ export default {
 .paragraph {
   height: 30px;
 }
-
 </style>

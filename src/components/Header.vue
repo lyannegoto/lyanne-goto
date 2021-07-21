@@ -5,19 +5,8 @@
     </div>
     <div class="nameContainer">
       <img alt="Lyanne Goto" src="./../assets/lyanne-goto.png" />
-    </div>
-    <ul>
-      <router-link to="/Inicio">Início</router-link>
-      |
-      <router-link to="/SobreMim">Sobre Mim</router-link>
-      |
-      <router-link to="/Duvidas">Dúvidas</router-link>
-      |
-      <router-link to="/Ensaios">Ensaios</router-link>
-    </ul>
+    </div>    
   </header>
-
-  <router-view></router-view>
 </template>
 
 <script>
@@ -40,19 +29,5 @@ export default {
 img {
   object-fit: fill;
   width: 100%;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
 }
 </style>

@@ -1,24 +1,35 @@
-import VueRouter from 'vue-router'
+import { createWebHistory, createRouter } from 'vue-router'
 
-import Duvidas from './../components/Duvidas.vue'
+import Inicio from './../components/Inicio.vue'
 import SobreMim from './../components/SobreMim.vue'
+import Duvidas from './../components/Duvidas.vue'
+import Ensaios from './../components/Ensaios.vue'
 
-const routes = [
-  {
-    path: '/duvidas',
-    name: 'Duvidas',
-    component: Duvidas
-  },
-  {
-    path: '*',
-    name: 'Sobre Mim',
-    component: SobreMim
-  }
-]
-
-const router = new VueRouter({
-  linkExactActiveClass: '',
-  routes
+const history = createWebHistory()
+const router = createRouter({
+    history,
+    routes: [
+        {
+            path: '/',
+            component: Inicio
+        },
+        {
+            path: '/inicio',
+            component: Inicio
+        },
+        {
+            path: '/sobre-mim',
+            component: SobreMim
+        },
+        {
+            path: '/duvidas',
+            component: Duvidas
+        },
+        {
+            path: '/ensaios',
+            component: Ensaios
+        },
+    ]
 })
 
 export default router
