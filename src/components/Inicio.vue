@@ -1,4 +1,7 @@
 <template class="inicio">
+  <div class="carrousel-container">
+  </div>
+
   <div class="flower-message-container">
     <div class="flower-container">
       <img alt="Flower" src="./../assets/flower.png" />
@@ -37,6 +40,7 @@ export default {
 
 <style scoped>
 .flower-message-container {
+  margin-bottom: 100px;
   display: inline-flex;
   align-items: center;
   height: 300px;
@@ -67,6 +71,7 @@ p {
 }
 
 .phrase-container {
+  margin-bottom: 100px;
   display: inline-flex;
   align-items: center;
   width: 75%;
@@ -76,5 +81,9 @@ p {
   object-fit: fill;
   height: 100%;
   width: 100%;
+}
+
+.instagram-message-container {
+  display: inline-flex;
 }
 </style>
