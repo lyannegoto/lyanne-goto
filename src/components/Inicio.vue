@@ -21,6 +21,7 @@
   </div>
 
   <div class="instagram-message-container">
+    <div class="empty-container" />
     <div class="instagram-container">
       <p>@lyannegoto</p>
       <iframe
@@ -28,17 +29,16 @@
         class="snapwidget-widget"
         allowtransparency="true"
         frameborder="0"
-        scrolling="yes"
-        style="border:none; overflow:hidden; width:100%;"
+        scrolling="no"
       ></iframe>
     </div>
     <div class="message-container">
       <p>
-        Vem acompanhar ainda mais de perto o nosso trabalho.
-      </p>
-      <p>
         Aqui no instagram você fica sabendo de cada detalhe dos processos de
         edição e entregas!
+      </p>
+      <p>
+        Vem acompanhar ainda mais de perto o nosso trabalho.
       </p>
     </div>
   </div>
@@ -97,14 +97,29 @@ export default {
 
 .instagram-message-container {
   display: inline-flex;
+  width: 50%;
+  height: 300px;
 }
 
-.instagram-message-container p {
-  margin: 0 0 10px;
+.instagram-message-container .empty-container {
+  margin: auto;
+  width: 35%;
+}
+
+.instagram-message-container .instagram-container .snapwidget-widget {
+  height: auto;
 }
 
 .instagram-message-container .message-container {
   display: flex;
   flex-direction: column-reverse;
+  margin: auto;
+  width: 35%;
+}
+
+.instagram-message-container .message-container p {
+  padding: 0 10% 0 5%;
+  text-align: left;
+  margin: 0 0 10px;
 }
 </style>
